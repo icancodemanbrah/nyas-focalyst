@@ -1,0 +1,25 @@
+{
+  "completed_at": "2026-11-01T08:45:31.194537+00:00",
+  "checks": [
+    {
+      "test": "engine.cjs",
+      "exit_code": 0,
+      "output": "PASS reproducible samples and features\nPASS calibration uses feature-derived classification for every state and profile\nPASS personalization matters\nPASS quality and ambiguity reject unusable signals\nPASS all documented fixed scenarios for both people\nPASS permission, Stop, physical links, stale data and limits\nPASS repeated events, lockout and rapid Stop\nPASS long session respects counts under varied frames\nPASS threshold change affects detections on held-out windows\nPASS outcomes require evidence and handle conflicting feedback\nPASS metrics denominators and manual confusion matrix\nPASS invalid configuration cannot authorize\n12 engine test groups passed\n"
+    },
+    {
+      "test": "stream.cjs",
+      "exit_code": 0,
+      "output": "PASS continuous deterministic samples independent of chunk size\nPASS live windows and static calibration agree across both synthetic people\nPASS noisy live signal is rejected and fresh samples recover\nPASS baseline centering is explicit and calibrated per person\nPASS balanced accuracy and missing denominator handling\n5 stream test groups passed\n"
+    },
+    {
+      "test": "simple-browser.cjs",
+      "exit_code": 0,
+      "output": "PASS: three tabs, no links, connection, continuous signals, automatic decisions, one event per difficulty, engagement, noisy signal, global Stop, disconnection, CSV, history deletion, reset, reload, responsive layout.\n"
+    },
+    {
+      "test": "simple-edge-browser.cjs",
+      "exit_code": 0,
+      "output": "PASS: session limit/reset, task action evidence, rapid Start/Stop, erase, offline, CSV bridge, midnight reset, 200% zoom\n"
+    }
+  ]
+}

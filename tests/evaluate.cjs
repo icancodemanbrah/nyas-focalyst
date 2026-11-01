@@ -1,2 +1,0 @@
-// Developer-only reproducible evaluation. No research controls are exposed in the app.
-const E=require('../simulation.js');const arg=process.argv.find(x=>x.startsWith('--threshold='));const threshold=arg?Number(arg.split('=')[1]):.65;if(!Number.isFinite(threshold)||threshold<0||threshold>1)throw Error('Threshold must be between 0 and 1');console.log(JSON.stringify({model:E.VERSION,threshold,profiles:Object.keys(E.profiles).map(profile=>({profile,fixedChecks:E.runTests(profile),heldOut:E.benchmark(profile,threshold)}))},null,2));
